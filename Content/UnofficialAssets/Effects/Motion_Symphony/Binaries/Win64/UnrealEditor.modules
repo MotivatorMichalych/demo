@@ -1,0 +1,8 @@
+{
+	"BuildId": "23058290",
+	"Modules": 
+	{
+		"MotionSymphony": "UnrealEditor-MotionSymphony.dll",
+		"MotionSymphonyEditor": "UnrealEditor-MotionSymphonyEditor.dll"
+	}
+}
