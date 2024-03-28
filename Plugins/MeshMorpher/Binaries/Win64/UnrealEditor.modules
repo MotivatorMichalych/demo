@@ -1,0 +1,9 @@
+{
+	"BuildId": "27405482",
+	"Modules": 
+	{
+		"MeshMorpherCore": "UnrealEditor-MeshMorpherCore.dll",
+		"MeshMorpherEditor": "UnrealEditor-MeshMorpherEditor.dll",
+		"MeshMorpherRuntime": "UnrealEditor-MeshMorpherRuntime.dll"
+	}
+}
