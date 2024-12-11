@@ -37,6 +37,11 @@ void UNarrativeNodeBase::ProcessEvents(APawn* Pawn, APlayerController* Controlle
 		UE_LOG(LogNarrative, Warning, TEXT("Tried running events on node %s but Narrative Comp was null."), *GetNameSafe(this));
 	}
 
+	if (NarrativeComponent->bIsLoading)
+	{
+		return;
+	}
+
 	for (auto& Event : Events)
 	{
 		if (Event && (Event->EventRuntime == Runtime || Event->EventRuntime == EEventRuntime::Both))

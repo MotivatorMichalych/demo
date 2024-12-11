@@ -267,9 +267,7 @@ void UQuest::SucceedQuest(FText QuestSucceededMessage)
 
 	BPOnQuestSucceeded(this, QuestSucceededMessage);
 
-	QuestSucceeded.Broadcast(this, QuestSucceededMessage);
-
-	if (OwningComp)
+	if (OwningComp && !OwningComp->bIsLoading)
 	{
 		OwningComp->OnQuestSucceeded.Broadcast(this, QuestSucceededMessage);
 	}
